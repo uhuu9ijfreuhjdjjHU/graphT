@@ -16,8 +16,8 @@ void printBoxGraph(int displayNumber)
 
 int main()
 {
-  int x = 5; //x & y axis
-  int y = 5;
+  int x = 6; //x & y axis
+  int y = 6;
   
   int center[2] = {(y/2),(x/2)}; //center coordinate's
 
@@ -32,43 +32,18 @@ int main()
   cout<<"y; ";
   cin>>yChoose;
 
-  graphPlot[center[0] - yChoose][center[1] + xChoose] = 1;
+  graphPlot[center[0] - yChoose][center[1] + xChoose] = 1; //equation to take player input and plot
    
-  graphPlot[center[0]][center[1]] = 1;
+  graphPlot[center[0]][center[1]] = 1; //center plot
 
   while (true)
   {
-    cout<<"|";
-
     for (int i = 0; i < x; i++)
     { 
       for (int j = 0; j < y; j++)
       {
-        if (graphPlot[i][j] == 1)
-        {
-          cout<<"*";
-        }
-        else if (j == (y/2))
-        {
-          cout<<"|";
-        }
-        else if (i == (x/2) || graphPlot[i][j] == 0)
-        {
-          cout<<"-";
-        }
-        if ((j + 1) != (y/2) && j != (y/2))
-        {
-          cout<<"|";
-        }
+        
       }
-      
-      if (i == 4)
-      {
-        break;
-      } 
-      
-      cout<<endl<<"|";
     }
-    break;
-  }
+  break;
 }
