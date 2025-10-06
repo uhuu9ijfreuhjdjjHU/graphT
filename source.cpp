@@ -34,9 +34,9 @@ int main()
   {
     x = abs(xChoose) * 2 + 1;
   }
-  if (xChoose>(y-1)/2 || yChoose<-1*((y-1)/2))
+  if (yChoose>(y-1)/2 || yChoose<-1*((y-1)/2))
   {
-    y = abs(xChoose) * 2 + 1;
+    y = abs(yChoose) * 2 + 1;
   }
 
   int center[2] = {(y/2),(x/2)}; //center coordinate's
