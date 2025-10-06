@@ -30,9 +30,9 @@ int main()
   int x = 5;
   int y = 5;
 
-  if (xChoose>(x-1)/2 || xChoose<-1*((x-1)/2))
+  if (xChoose>(x-1)/2 || xChoose<-1*((x-1)/2)) // equations reduce x or y size into the size of the quadrants to be compared against the desired x or y value
   {
-    x = abs(xChoose) * 2 + 1;
+    x = abs(xChoose) * 2 + 1; // equation converts desired x or yvalue into the size the graph needs to display an x or y of that size
   }
   if (yChoose>(y-1)/2 || yChoose<-1*((y-1)/2))
   {
