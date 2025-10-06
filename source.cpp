@@ -38,12 +38,20 @@ int main()
 
   while (true)
   {
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < y; i++)  // rows
     { 
-      for (int j = 0; j < y; j++)
+      for (int j = 0; j < x; j++)  // columns
       {
-        
+        if (graphPlot[i][j] == 1)
+        {
+          cout << "*";
+        }
+        else
+        {
+          cout << "-";
+        }
       }
+    cout << endl;
     }
-  break;
+  break;}
 }
